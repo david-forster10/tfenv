@@ -231,6 +231,14 @@ functionality will be restored.
 TFENV_REVERSE_REMOTE=1 tfenv list-remote
 ```
 
+##### `TFENV_SKIP_LIST_REMOTE`
+
+Integer (Default: 0)
+
+When using a custom remote, such as Artifactory, lazy caching may be used meaning the versions
+returned by the remote aren't the full list available (more can be pulled on demand). This option 
+disables the pre-install validation and will blindly pull the requested version from the remote.
+
 ##### `TFENV_CONFIG_DIR`
 
 Path (Default: `$TFENV_ROOT`)
